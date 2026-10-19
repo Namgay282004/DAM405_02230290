@@ -1,0 +1,13 @@
+2026-10-10 15:57:04,503 | INFO | Model successfully loaded from model.joblib
+2026-10-10 15:57:04,503 | INFO | Loaded training mean for Feature 0 baseline: 5.8092
+2026-10-10 15:57:04,504 | INFO | normal event service handled a request
+2026-10-10 15:57:04,504 | WARNING | unexpected input but still handled
+2026-10-10 15:57:04,504 | ERROR | a request failed
+2026-10-10 15:57:04,504 | CRITICAL | service cannot continue
+2026-10-10 15:57:28,860 | INFO | prediction=0 latency_ms=3.0
+2026-10-10 15:57:28,869 | INFO | prediction=0 latency_ms=1.1
+2026-10-10 15:57:28,878 | ERROR | prediction failed: Missing 'features' key in request payload
+2026-10-10 15:57:28,886 | WARNING | possible drift: live=18.500 train=5.809 change=218%
+2026-10-10 15:57:28,887 | INFO | prediction=0 latency_ms=1.3
+2026-10-10 15:57:28,897 | INFO | prediction=2 latency_ms=1.3
+2026-10-10 15:57:28,897 | INFO | requests=5 errors=1 avg_latency_ms=1.3

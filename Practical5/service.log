@@ -1,0 +1,20 @@
+2026-10-09 09:44:44,500 | INFO | Model successfully loaded from model.joblib
+2026-10-09 09:44:44,501 | INFO | normal event service handled a request
+2026-10-09 09:44:44,501 | WARNING | unexpected input but still handled
+2026-10-09 09:44:44,501 | ERROR | a request failed
+2026-10-09 09:44:44,501 | CRITICAL | service cannot continue
+2026-10-09 09:46:13,721 | ERROR | prediction failed: X has 2 features, but RandomForestClassifier is expecting 4 features as input.
+2026-10-09 09:46:24,126 | ERROR | prediction failed: Missing 'features' key in payload
+2026-10-09 09:46:31,767 | WARNING | possible drift: live=2.500 train=0.500 change=400%
+2026-10-09 09:46:31,768 | ERROR | prediction failed: X has 2 features, but RandomForestClassifier is expecting 4 features as input.
+2026-10-09 09:49:20,863 | WARNING | possible drift: live=5.100 train=0.500 change=920%
+2026-10-09 09:49:20,872 | INFO | prediction=0 latency_ms=8.8
+2026-10-09 09:49:20,888 | WARNING | possible drift: live=4.900 train=0.500 change=880%
+2026-10-09 09:49:20,914 | INFO | prediction=0 latency_ms=25.3
+2026-10-09 09:49:20,914 | INFO | requests=5 errors=3 avg_latency_ms=7.1
+2026-10-09 09:49:58,511 | WARNING | possible drift: live=18.500 train=0.500 change=3600%
+2026-10-09 09:49:58,515 | INFO | prediction=0 latency_ms=4.5
+2026-10-09 09:50:03,052 | WARNING | possible drift: live=5.800 train=0.500 change=1060%
+2026-10-09 09:50:03,058 | INFO | prediction=2 latency_ms=5.5
+2026-10-09 09:50:03,067 | WARNING | possible drift: live=6.300 train=0.500 change=1160%
+2026-10-09 09:50:03,072 | INFO | prediction=2 latency_ms=5.5
