@@ -1,0 +1,28 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: MLOps Serverless Inference Architecture
+
+Globals:
+  Function:
+    Timeout: 30
+    MemorySize: 256
+    Runtime: python3.11
+
+Resources:
+  ModelInferenceFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: mlops-model-inference
+      CodeUri: ../lambda/
+      Handler: app.lambda_handler
+      Events:
+        InferenceApi:
+          Type: Api
+          Properties:
+            Path: /predict
+            Method: post
+
+Outputs:
+  InferenceApiEndpoint:
+    Description: "Public API Gateway URL for Model Inference"
+    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/predict/"
