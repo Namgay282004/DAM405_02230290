@@ -1,0 +1,25 @@
+[2026-10-26 14:56:39,295] [INFO] [MLOps_Service]: Successfully loaded production model from MLflow Registry.
+[2026-10-26 14:57:03,649] [INFO] [MLOps_Service]: Successfully loaded production model from MLflow Registry.
+[2026-10-26 14:58:56,280] [INFO] [MLOps_Service]: Successfully loaded production model from MLflow Registry.
+[2026-10-26 14:59:49,787] [INFO] [MLOps_Service]: Successfully loaded production model from MLflow Registry.
+[2026-10-26 15:00:40,717] [INFO] [MLOps_Service]: Successfully loaded production model from MLflow Registry.
+[2026-10-26 15:00:47,845] [INFO] [MLOps_Service]: Health check endpoint pinged.
+[2026-10-26 15:01:44,804] [INFO] [MLOps_Service]: Prediction: 0 | Latency: 9.46ms | Drift Flag: False
+[2026-10-26 15:02:14,084] [INFO] [MLOps_Service]: Prediction: 0 | Latency: 4.43ms | Drift Flag: False
+[2026-10-26 15:02:22,647] [INFO] [MLOps_Service]: Prediction: 0 | Latency: 5.94ms | Drift Flag: False
+[2026-10-26 15:02:50,200] [WARNING] [MLOps_Service]: DRIFT DETECTED in feature 'age'! p-value: 0.0020
+[2026-10-26 15:02:50,203] [WARNING] [MLOps_Service]: DRIFT DETECTED in feature 'income'! p-value: 0.0020
+[2026-10-26 15:02:50,206] [WARNING] [MLOps_Service]: DRIFT DETECTED in feature 'credit_score'! p-value: 0.0020
+[2026-10-26 15:02:50,207] [WARNING] [MLOps_Service]: DRIFT DETECTED in feature 'loan_amount'! p-value: 0.0020
+[2026-10-26 15:02:50,208] [WARNING] [MLOps_Service]: DRIFT DETECTED in feature 'tenure'! p-value: 0.0020
+[2026-10-26 15:02:50,209] [WARNING] [MLOps_Service]: DRIFT DETECTED in feature 'debt_ratio'! p-value: 0.0020
+[2026-10-26 15:02:50,210] [INFO] [MLOps_Service]: Prediction: 1 | Latency: 12.75ms | Drift Flag: True
+[2026-10-26 15:02:55,720] [WARNING] [MLOps_Service]: DRIFT DETECTED in feature 'age'! p-value: 0.0020
+[2026-10-26 15:02:55,721] [WARNING] [MLOps_Service]: DRIFT DETECTED in feature 'income'! p-value: 0.0020
+[2026-10-26 15:02:55,722] [WARNING] [MLOps_Service]: DRIFT DETECTED in feature 'credit_score'! p-value: 0.0020
+[2026-10-26 15:02:55,722] [WARNING] [MLOps_Service]: DRIFT DETECTED in feature 'loan_amount'! p-value: 0.0020
+[2026-10-26 15:02:55,723] [WARNING] [MLOps_Service]: DRIFT DETECTED in feature 'tenure'! p-value: 0.0020
+[2026-10-26 15:02:55,724] [WARNING] [MLOps_Service]: DRIFT DETECTED in feature 'debt_ratio'! p-value: 0.0020
+[2026-10-26 15:02:55,726] [INFO] [MLOps_Service]: Prediction: 1 | Latency: 7.14ms | Drift Flag: True
+[2026-10-26 15:04:03,140] [INFO] [MLOps_Service]: Metrics queried: {'total_requests': 5, 'total_errors': 0, 'error_rate': 0.0, 'average_latency_ms': np.float64(7.94)}
+[2026-10-26 15:04:23,673] [INFO] [MLOps_Service]: Metrics queried: {'total_requests': 5, 'total_errors': 0, 'error_rate': 0.0, 'average_latency_ms': np.float64(7.94)}
