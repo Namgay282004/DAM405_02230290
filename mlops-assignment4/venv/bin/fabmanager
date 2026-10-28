@@ -1,0 +1,8 @@
+#!/home/namgaywangchuk/Desktop/Seventh-Semester/DAM405/DAM405_02230290/mlops-assignment4/venv/bin/python3
+# -*- coding: utf-8 -*-
+import re
+import sys
+from flask_appbuilder.console import cli
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(cli())

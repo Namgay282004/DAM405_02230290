@@ -1,0 +1,14 @@
+[2026-10-28T10:58:03.004+0600] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ml_orchestration_pipeline.extract_data scheduled__2026-10-27T00:00:00+00:00 [queued]>
+[2026-10-28T10:58:03.008+0600] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ml_orchestration_pipeline.extract_data scheduled__2026-10-27T00:00:00+00:00 [queued]>
+[2026-10-28T10:58:03.008+0600] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2026-10-28T10:58:03.020+0600] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): extract_data> on 2026-10-27 00:00:00+00:00
+[2026-10-28T10:58:03.022+0600] {standard_task_runner.py:60} INFO - Started process 140789 to run task
+[2026-10-28T10:58:03.024+0600] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'ml_orchestration_pipeline', 'extract_data', 'scheduled__2026-10-27T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/ml_orchestration_dag.py', '--cfg-path', '/tmp/tmpu6psawp4']
+[2026-10-28T10:58:03.024+0600] {standard_task_runner.py:88} INFO - Job 3: Subtask extract_data
+[2026-10-28T10:58:03.044+0600] {task_command.py:423} INFO - Running <TaskInstance: ml_orchestration_pipeline.extract_data scheduled__2026-10-27T00:00:00+00:00 [running]> on host hullabaloo
+[2026-10-28T10:58:03.073+0600] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='mlops_student' AIRFLOW_CTX_DAG_ID='ml_orchestration_pipeline' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2026-10-27T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-10-27T00:00:00+00:00'
+[2026-10-28T10:58:03.073+0600] {logging_mixin.py:188} INFO - Extracted 3 records.
+[2026-10-28T10:58:03.074+0600] {python.py:201} INFO - Done. Returned value was: [{'id': 101, 'features': [0.82, 0.64, 0.91]}, {'id': 102, 'features': [0.12, 0.25, 0.33]}, {'id': 103, 'features': [0.75, 0.58, 0.69]}]
+[2026-10-28T10:58:03.082+0600] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=ml_orchestration_pipeline, task_id=extract_data, execution_date=20261027T000000, start_date=20261028T045803, end_date=20261028T045803
+[2026-10-28T10:58:03.092+0600] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-10-28T10:58:03.103+0600] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check
